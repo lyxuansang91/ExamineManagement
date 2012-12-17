@@ -16,6 +16,9 @@ public class PhongThiEntity {
 			
 		}
 		 
+		public PhongThiEntity() {
+			// TODO Auto-generated constructor stub
+		}
 		/**
 		 * return MaPhong
 		 */
