@@ -78,9 +78,26 @@ public class MongoDBConnection {
 		return cursor;
 	}
 	
+	public void removeElement(BasicDBObject obj){
+		colls.remove(obj);
+	}
+	
 	public DBCursor displayAll(){
 		cursor = colls.find();
 		return cursor;
+	}
+
+
+	public void update(BasicDBObject basicDBObject, BasicDBObject updateObj) {
+		// TODO Auto-generated method stub
+		colls.update(basicDBObject, updateObj);
+	}
+
+
+	public void addNew(BasicDBObject insertObj) {
+		// TODO Auto-generated method stub
+		colls.insert(insertObj);
+		
 	}
 	
 	
