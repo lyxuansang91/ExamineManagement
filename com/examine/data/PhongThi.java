@@ -60,7 +60,7 @@ public class PhongThi extends PhongThiEntity {
 	}
 	
 	public static DBCursor displayPhongThi(String maPhong, String tenPhong){
-		MongoDBConnection mongoClient = new MongoDBConnection("examineManagement", "PhongThi", 27017, "localhost");
+		MongoDBConnection mongoClient = new MongoDBConnection(Configuration.DATABASE_NAME, "PhongThi", Configuration.PORT, Configuration.HOST);
 		
 		mongoClient.createConnection();
 		ArrayList x = new ArrayList();
@@ -75,7 +75,7 @@ public class PhongThi extends PhongThiEntity {
 
 	public static void updateRow(PhongThi newPT) {
 		// TODO Auto-generated method stub
-		MongoDBConnection mongoClient = new MongoDBConnection("examineManagement", "PhongThi", 27017, "localhost");
+		MongoDBConnection mongoClient = new MongoDBConnection(Configuration.DATABASE_NAME, "PhongThi", Configuration.PORT, Configuration.HOST);
 		mongoClient.createConnection();
 		BasicDBObject updateObj = new BasicDBObject("$set", new BasicDBObject("TenPhong", newPT.getTenPhong()));
 		mongoClient.update(new BasicDBObject("MaPhong", newPT.getMaPhong()),  updateObj);
@@ -84,7 +84,7 @@ public class PhongThi extends PhongThiEntity {
 
 	public static void addNew(PhongThi newPT) {
 		// TODO Auto-generated method stub
-		MongoDBConnection mongoClient = new MongoDBConnection("examineManagement", "PhongThi", 27017, "localhost");
+		MongoDBConnection mongoClient = new MongoDBConnection(Configuration.DATABASE_NAME, "PhongThi", Configuration.PORT, Configuration.HOST);
 		mongoClient.createConnection();
 		BasicDBObject insertObj = new BasicDBObject();
 		insertObj.put("MaPhong", newPT.getMaPhong());

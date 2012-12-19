@@ -19,6 +19,11 @@ public class PhongThiEntity {
 		public PhongThiEntity() {
 			// TODO Auto-generated constructor stub
 		}
+		public PhongThiEntity(String tenphong) {
+			// TODO Auto-generated constructor stub
+			this.oTenPhong = tenphong;
+		}
+
 		/**
 		 * return MaPhong
 		 */

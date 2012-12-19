@@ -42,6 +42,8 @@ public class ThiSinhEntity {
 	 * @param oCMT
 	 * @param oHoKhau
 	 */
+	
+	
 	public ThiSinhEntity(String oMaThiSinh, String oHoDem, String oTen,
 			Date oNgaySinh, String oQueQuan, boolean oGioiTinh, String oDanToc,
 			String oKhuVucUuTien, String oCMT, String oHoKhau) {
@@ -55,6 +57,47 @@ public class ThiSinhEntity {
 		this.oKhuVucUuTien = oKhuVucUuTien;
 		this.setCMT(oCMT);
 		this.oHoKhau = oHoKhau;
+	}
+	
+	
+	
+	
+	/**
+	 * @param oHoDem
+	 * @param oTen
+	 * @param oNgaySinh
+	 * @param oQueQuan
+	 * @param oDanToc
+	 * @param oKhuVucUuTien
+	 */
+	public ThiSinhEntity(String oHoDem, String oTen, Date oNgaySinh,
+			String oQueQuan, String oDanToc, String oKhuVucUuTien) {
+	
+		this.oHoDem = oHoDem;
+		this.oTen = oTen;
+		this.oNgaySinh = oNgaySinh;
+		this.oQueQuan = oQueQuan;
+		this.oDanToc = oDanToc;
+		this.oKhuVucUuTien = oKhuVucUuTien;
+	}
+	
+	
+	
+	/**
+	 * @param oHoDem
+	 * @param oTen
+	 * @param oNgaySinh
+	 * @param oQueQuan
+	 * @param oKhuVucUuTien
+	 */
+	public ThiSinhEntity(String oHoDem, String oTen, Date oNgaySinh,
+			String oQueQuan, String oKhuVucUuTien) {
+		super();
+		this.oHoDem = oHoDem;
+		this.oTen = oTen;
+		this.oNgaySinh = oNgaySinh;
+		this.oQueQuan = oQueQuan;
+		this.oKhuVucUuTien = oKhuVucUuTien;
 	}
 	/**
 	 * @return the oMaThiSinh

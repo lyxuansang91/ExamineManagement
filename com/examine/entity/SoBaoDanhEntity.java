@@ -42,6 +42,10 @@ public class SoBaoDanhEntity {
 	 * @param oMaKhoa
 	 */
 	
+	public SoBaoDanhEntity(String sobaodanh) {
+		// TODO Auto-generated constructor stub
+		this.oSoBaoDanh = sobaodanh;
+	}
 	/**
 	 * @return the oSoBaoDanh
 	 */

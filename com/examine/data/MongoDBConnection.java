@@ -83,6 +83,7 @@ public class MongoDBConnection {
 	}
 	
 	public DBCursor displayAll(){
+		//System.out.println(1);
 		cursor = colls.find();
 		return cursor;
 	}

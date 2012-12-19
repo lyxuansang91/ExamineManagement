@@ -6,7 +6,16 @@ public class KhoiEntity {
 	/**
 	 * 
 	 */
+	
+	
 	public KhoiEntity() {
+	}
+	/**
+	 * @param oMaKhoi
+	 */
+	public KhoiEntity(String oMaKhoi) {
+		super();
+		this.oMaKhoi = oMaKhoi;
 	}
 	/**
 	 * @param oMaKhoi
